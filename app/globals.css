@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 150 30% 98%;
+    --foreground: 166 40% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 166 40% 10%;
+    --primary: 158 64% 32%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 148 35% 91%;
+    --secondary-foreground: 160 48% 16%;
+    --muted: 150 25% 92%;
+    --muted-foreground: 160 12% 40%;
+    --accent: 44 88% 56%;
+    --accent-foreground: 150 45% 12%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 150 18% 84%;
+    --input: 150 18% 84%;
+    --ring: 158 64% 32%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 160 36% 7%;
+    --foreground: 150 24% 94%;
+    --card: 160 30% 10%;
+    --card-foreground: 150 24% 94%;
+    --primary: 152 68% 45%;
+    --primary-foreground: 160 44% 8%;
+    --secondary: 160 22% 17%;
+    --secondary-foreground: 150 24% 94%;
+    --muted: 160 22% 15%;
+    --muted-foreground: 150 12% 66%;
+    --accent: 44 88% 62%;
+    --accent-foreground: 160 44% 8%;
+    --destructive: 0 62% 46%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 160 18% 23%;
+    --input: 160 18% 23%;
+    --ring: 152 68% 45%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+.leaf-grid {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(22, 163, 74, 0.16), transparent 28%),
+    linear-gradient(rgba(21, 128, 61, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(21, 128, 61, 0.08) 1px, transparent 1px);
+  background-size: auto, 44px 44px, 44px 44px;
+}
