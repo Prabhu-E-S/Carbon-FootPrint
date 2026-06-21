@@ -163,3 +163,21 @@ npm run seed
 - If Prisma migration fails locally, remove `prisma/dev.db` and retry `npx prisma migrate dev`.
 - If AI coach returns fallback text, set `OPENAI_API_KEY` and restart `npm run dev`.
 - If auth fails in production, confirm `AUTH_SECRET` and `NEXTAUTH_URL` match the deployed domain.
+
+## Testing
+
+This project uses Vitest for automated testing.
+
+Current Coverage:
+- Authentication validation
+- Registration validation
+- Carbon footprint calculations
+- Sustainability challenges
+- Dashboard metrics
+
+Run tests locally:
+
+npm test
+
+Continuous Integration:
+GitHub Actions automatically runs all tests on every push and pull request.
