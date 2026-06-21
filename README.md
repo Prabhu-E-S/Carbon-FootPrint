@@ -166,18 +166,13 @@ npm run seed
 
 ## Testing
 
-This project uses Vitest for automated testing.
+CarbonWise AI includes:
 
-Current Coverage:
-- Authentication validation
-- Registration validation
-- Carbon footprint calculations
-- Sustainability challenges
-- Dashboard metrics
+- Authentication validation tests
+- Registration workflow tests
+- Carbon footprint calculation tests
+- Sustainability challenge tests
+- AI Coach validation and fallback tests
+- Security and password hashing tests
 
-Run tests locally:
-
-npm test
-
-Continuous Integration:
-GitHub Actions automatically runs all tests on every push and pull request.
+Continuous Integration is enabled using GitHub Actions.
